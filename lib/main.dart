@@ -223,7 +223,7 @@ class _FlightStatusPageState extends State<FlightStatusPage> {
   TextEditingController controller = TextEditingController();
 
   Future<void> fetchFlightStatus(String flightNumber) async {
-    final response = await http.get(Uri.parse('https://api.aviationstack.com/v1/flights?access_key=e34551519613bca116750b306a6c2dcc&flight_iata=$flightNumber'));
+    final response = await http.get(Uri.parse('https://api.aviationstack.com/v1/flights?access_key=Avaiation_Stack_Api&flight_iata=$flightNumber'));
     
     if (response.statusCode == 200) {
       var data = json.decode(response.body);
@@ -316,7 +316,7 @@ class _LayoverServicesPageState extends State<LayoverServicesPage> {
   GoogleMapController? mapController;
   Set<Marker> markers = {};
   LatLng _currentLocation = LatLng(40.6413, -73.7781); // Default JFK Airport
-  String googlePlacesApiKey = 'AIzaSyDWQRP58C4WZN2U_A7cjBmfn_AdkzYLvlk';
+  String googlePlacesApiKey = 'Google_Map_Api';
   TextEditingController searchController = TextEditingController();
 
   @override
