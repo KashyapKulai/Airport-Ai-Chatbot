@@ -2,7 +2,7 @@ import 'dart:convert';
 import 'package:http/http.dart' as http;
 
 class CohereService {
-  final String apiKey = '1xILMQTvjN2rIMjNS2tV4RJsoSDaEKp2rDxancDF';
+  final String apiKey = 'CohereApi';
 
   Future<String> getChatResponse(String message) async {
     final response = await http.post(
