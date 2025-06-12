@@ -40,7 +40,7 @@ class ChatScreen extends StatefulWidget {
 class _ChatScreenState extends State<ChatScreen> {
   List<ChatMessage> messages = [];
   TextEditingController controller = TextEditingController();
-  final AIService aiService = AIService('AIzaSyD3myGLKZGVlQOFCWlWxpete4-uodAZ03E');
+  final AIService aiService = AIService('Gemini_Api_Key');
 
   void processMessage(String text) {
     addMessage(text, true);
